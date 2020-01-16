@@ -1,0 +1,143 @@
+:root {
+  --app-theme-color: #995DFF;
+  --font-size-h1:36px;
+  --font-size-h2:26px;
+  --font-size-h3:16px;
+  --font-size-h4:12px;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/Roboto-Light.ttf);
+}
+body{
+  font-family: Roboto;
+}
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+    
+}
+.App-header{
+  width: calc(100vw - 20px);
+  display: flex;
+  border-bottom: 2px #eee solid;
+  padding: 10px;
+}
+.App-heading{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: var(--font-size-h1);
+  width: 50%;
+
+}
+
+
+.App-header-actions{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+
+}
+
+.App-heading span::before{
+  content: '';
+  background-image: url(assets/logo.png);
+  display: inline-block;
+  content: '';
+  width: 60px;
+  height: 35px;
+  background-size: cover;
+}
+
+.App-section{
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--font-size-h3);
+}
+
+.section{
+    
+    color: var(--app-theme-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.selected{
+  border-bottom: 2px solid !important;
+  cursor: default;
+}
+.App-content  {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+}
+.footer{
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-h4);
+  justify-content: center;
+  align-items: center;
+}
+.loginFormModal{
+  display: flex;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  justify-content: center;
+}
+.loginFormContainer{
+  justify-self: center;
+    align-self: center;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    max-height: 50%;
+    box-shadow: 0px 1px 6px 3px #989696;
+}
+.hide{
+  display: none;
+}
+
+.default-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*For mobile width less than equal to 615px*/
+@media only screen and (max-width: 615px) {
+  :root{
+    --font-size-h1:18px;
+    --font-size-h2:16px;
+  --font-size-h3:14px;
+  }
+  
+  .App-heading span::before{
+    width: 40px;
+    height: 25px;
+  }
+}
+
+/*For mobile width less than equal to 320px*/
+@media only screen and (max-width: 320px){
+  :root{
+    --font-size-h1:18px;
+    --font-size-h2:16px;
+    --font-size-h3:14px;
+  }
+  .App-heading span::before{
+    width: 38px;
+    height: 22px;
+  }
+}
+

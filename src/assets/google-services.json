@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "159137702696",
+    "firebase_url": "https://collaborate-6867.firebaseio.com",
+    "project_id": "collaborate-6867",
+    "storage_bucket": "collaborate-6867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159137702696:android:5bfde50d6c12754fcba61d",
+        "android_client_info": {
+          "package_name": "com.collaboration.collaborate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159137702696-k5phg2092ovdqho8q7vmod16ilvdnnge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7zlIiIygjrXSzXveiu-ncVxBiuHS128k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159137702696-k5phg2092ovdqho8q7vmod16ilvdnnge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
